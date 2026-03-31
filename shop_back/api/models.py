@@ -9,5 +9,5 @@ class Product(models.Model):
     price = models.FloatField()
     description = models.TextField()
     count = models.IntegerField()
-    is_active = models.BooleanField()
+    is_active = models.BooleanField(default=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
